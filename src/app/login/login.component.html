@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row mt-5 mb-5 text-secondary text-uppercase">
+      <div class=" container  col mx-auto text-center">
+        <img src="assets/login2.svg" class="fadeIn" width="230" alt="">
+      </div>
+    </div>
+    <div class="row mb-5 d-flex justify-content-center">
+      <div class="col-md-6">
+        <div>
+          <div class="form-group text-secondary font-weight-bold">
+            <label for="exampleInputEmail1">E-mail</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="nome@exemplo.com" [(ngModel)]='userLogin.email'>
+            <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email com ninguém.</small>
+          </div>
+          <div class="form-group text-secondary font-weight-bold">
+            <label for="exampleInputPassword1">Senha</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite sua senha" [(ngModel)]='userLogin.senha'>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-outline-secondary text-uppercase font-weight-bold btn-bg btn-hover text-white " (click)='entrar()'>Entrar</button>
+          </div>
+          <br>
+          <label for="cadastro"> Ainda não tem cadastro? <a
+            routerLink='/cadastro'>Cadastre-se</a></label>
+  
+        </div>
+      </div>
+    </div>
+  </div>

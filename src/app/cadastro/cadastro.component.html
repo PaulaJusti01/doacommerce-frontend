@@ -1,0 +1,68 @@
+<div class="container">
+    <div class="row mt-5 mb-5">
+      <div class=" container  col mx-auto text-center">
+        <img src="assets/cadastro.svg" class="fadeIn" width="230" alt="">
+      </div>
+    </div>
+
+    <div class="row mb-5 d-flex justify-content-center">
+      <div class="col-md-8">
+        <div>
+          <div class="form-group text-secondary font-weight-bold" >
+            <label for="nome">Nome</label>
+            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" [(ngModel)]='usuario.nomeRazao'>
+          </div>
+
+          <div class="form-group text-secondary font-weight-bold">
+            <label for="email">E-mail</label>
+            <input type="email"  class="form-control" id="email" (keyup)="verificaEmail()" placeholder="nome@exemplo.com" [(ngModel)]='usuario.email'>
+          <div id="txtEmail"></div>
+          </div>
+
+          <div class="form-group text-secondary font-weight-bold">
+            <label for="senha">Senha</label>
+            <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" (input)='conferirSenha($event)' value='{{senha}}'>
+          </div>
+
+          <div class="form-group text-secondary font-weight-bold">
+            <label for="senhaConf">Confirmar senha</label>
+            <input type="password" class="form-control" id="senhaConf" placeholder="Digite a confirmação de senha" [(ngModel)]='usuario.senha'>
+          </div>
+
+          <div class="form-group text-secondary font-weight-bold">
+            <label for="cpfCnpj">CPF/CNPJ</label>
+            <input  class="form-control" id="cpf" placeholder="Digite seu CPF/CNPJ"
+            [(ngModel)]="usuario.cpfCpnj">
+          </div>
+
+          <div class="form-group text-secondary font-weight-bold">
+            <label for="seuEndereco ">Endereço</label>
+            <input type="text" class="form-control" id="endereco" placeholder="Digite seu endereço"
+            [(ngModel)]="usuario.endereco">
+          </div>
+
+          <div class="form-group text-secondary font-weight-bold">
+            <label for="suaIdade">Idade/Tempo de existência</label>
+            <input type="number" class="form-control" id="idade" placeholder="Digite sua idade"
+            [(ngModel)]="usuario.idade">
+          </div>
+
+          <div class="form-group text-secondary font-weight-bold">
+            <label for="tipoPessoa">Perfil</label>
+            <select id="tipopessoa" class="form-control" [(ngModel)]="usuario.tipoPessoa">
+              <option value="1" selected>Pessoa Física</option>
+              <option value="2">Pessoa Jurídica</option>
+              <option value="3">ONG</option>
+            </select>
+          </div>
+
+
+
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-outline-secondary text-uppercase font-weight-bold btn-bg btn-hover text-white" (click)='cadastrar()'>Cadastrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>

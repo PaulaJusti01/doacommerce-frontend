@@ -1,0 +1,48 @@
+.parallax {
+    background-image: url("https://static.mundodasmensagens.com/upload/listas/m/e/mensagens-de-amizade-O7Ka3-cfxl.png");
+  
+    min-height: 400px;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  
+
+.fadeIn {
+  -webkit-animation: fadeIn 3s ease-in-out;
+  -moz-animation: fadeIn 3s ease-in-out;
+  -o-animation: fadeIn 3s ease-in-out;
+  animation: fadeIn 3s ease-in-out;
+  }
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; } 
+  }
+  @-moz-keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1; }
+  }
+  @-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+  @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+
+.jumbo-bg{
+  background-color:  #a3a8c4;
+}
+
+.missao-bg{
+  background-color: #6d7993;
+}
+
+.nav-bg {
+  background-color: #918591;
+}

@@ -1,0 +1,38 @@
+<div class="container justify-content-center">
+
+  <div class="row mt-5 mb-5">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-6">
+      <div class="card mt-5 border-white">
+        <div class="card-header nav-bg">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-8">
+              <h5 class="card-title text-secondary">{{produto.nome}} </h5>
+              <small class="text-secondary">{{produto.texto}}</small>
+              <br>
+              <br>
+              <small class="text-secondary">Categoria: {{produto.categoria.categoria}}</small>
+              <br>
+              <small class="text-secondary">Quantidade: {{produto.quantidade}}</small>
+            </div>
+            <br>
+            <div class="col-md-4 d-flex justify-content-end">
+            </div>
+          </div>
+        </div>
+        <!-- <div class="card-body">
+          <p class="card-text" aria-describedby="texto">{{produto.nome}} </p>
+        </div> -->
+      </div>
+      <br>
+      <br>
+
+      <h5 class="text-center text-secondary">Tem certeza que deseja doar?</h5>
+      <div class="d-flex justify-content-center mt-5">
+        <button class="btn btn-outline-success mr-3" (click)="btnSim()">Sim</button>
+        <button class="btn btn-outline-danger" (click)="btnNao()">Não</button>
+      </div>
+    </div>
+  </div>
+</div>

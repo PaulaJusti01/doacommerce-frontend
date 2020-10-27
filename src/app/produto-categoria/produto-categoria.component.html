@@ -1,0 +1,51 @@
+<div class="container">
+
+    <div class="row mt-5 mb-5">
+       
+        <div class="col-md-8">
+            <h3 class="text-center mb-4 text-monospace">Cadastro de uma nova categoria</h3>
+
+            <div class="form-group">
+                <label class="text-monospace" for="texto">Nome da categoria:</label>
+                <input class="form-control" id="texto"  placeholder="Digite aqui a nova categoria" [(ngModel)]='categoria.categoria'> 
+            </div>
+            <div class="form-group">
+              <label class="text-monospace" for="texto">link da imagem:</label>
+              <input class="form-control" id="img"  placeholder="Digite aqui o link da imagem" [(ngModel)]='categoria.img'> 
+          </div>
+            <div class="row mb-5">
+                <div class="col-md-12 d-flex justify-content-center">
+                    <button class="btn btn-outline-success w-25" (click)='cadastrar()'>Cadastrar</button>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <h4 class="text-center text-monospace">Lista de categorias</h4>
+                </div>
+            </div>
+
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                      <th scope="col">Categoria</th>
+                    <th scope="col" class="d-flex justify-content-end">|Modificações</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor='let item of listaCategorias'>
+                    <th scope="row">{{item.id}}</th>
+                    <td>{{item.categoria}}</td> <!--descrição?-->
+                    <td class="d-flex justify-content-end">
+                       <a class="btn btn-outline-info mr-3" [routerLink]="['/editar-categoria', item.id]">Editar</a>
+                       <a class="btn btn-outline-danger">Apagar</a>
+                    </td>   
+                  </tr>
+                
+                </tbody>
+              </table>
+        </div>  
+    </div>
+</div>

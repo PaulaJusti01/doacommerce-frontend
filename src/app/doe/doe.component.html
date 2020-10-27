@@ -1,0 +1,20 @@
+
+<div class="container mt-5 mb-5">
+    <h2 class="text-secondary text-uppercase text-monospace text-center">Escolha uma categoria</h2>
+    <br>
+
+    <div class="row">
+        <div class="col-md-3" *ngFor="let item of listaCategorias">
+            <div class="card border-white mt-5" >
+              <img class="card-img-top" src="{{item.img}}" width="50" height="150" alt="Imagem de capa do card">
+              
+              <div class="card-body">
+                <h5 class="card-title">{{item.categoria}}</h5>
+                <h6>{{item.texto}}</h6>
+                <p class="card-text"></p>
+              </div>
+              <a [routerLink]="['/lista-produto-categoria', item.categoria]" class="btn btn-bg texto text-uppercase font-weight-bold">Veja</a>
+            </div>
+          </div>
+    </div>
+</div>

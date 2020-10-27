@@ -1,0 +1,19 @@
+
+.btn-bg{
+    background-color:  #8B658B
+}
+
+.texto{
+    color: white
+}
+
+.bg-color{
+    color:#6d7993
+}
+
+.btn-bg:hover{
+    background-color: #6d7993 !important;
+}
+
+
+

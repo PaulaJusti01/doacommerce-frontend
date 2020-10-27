@@ -1,0 +1,38 @@
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+  
+    padding: 0;
+  }
+  
+  ul.social-network li {
+    display: inline;
+    margin: 0;
+    padding: 5px;
+  }
+  
+  .faFacebook, .faLinkedin, .faInstagram{
+      color: white;
+  }
+  
+  .faFacebook:hover{
+    color: #3b5998;
+  }
+  
+  .faLinkedin:hover{
+  color: #0072b1;
+  }
+  
+  .faInstagram:hover{
+  color: #C13584;
+  }
+  .nav-bg {
+    background-color: #918591;
+}
+.btn-bg{
+  background-color:  #8B658B
+}
+.texto:hover{
+  color:#6d7993;
+}

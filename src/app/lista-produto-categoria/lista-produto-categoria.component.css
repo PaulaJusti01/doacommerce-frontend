@@ -1,0 +1,19 @@
+.btn-bg{
+    background-color:  #8B658B
+}
+.animation-doa{
+    animation-duration: 1.5s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 0%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
